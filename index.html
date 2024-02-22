@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+
+    <header>
+        
+        <div class="logotipo">
+         <img id="imagen" src="Vector.png" alt="Logotipo de alura" width="31px" height="48px">
+        </div>
+        <div class="contenedorp">
+            <p class="logo">Encriptador de Texto</p>
+        </div>
+        </header>
+        
+        <main>
+        <div class="contenedorentrada">    
+          
+                    <textarea name="entradatexto" id="entrada" cols="50" rows="1" placeholder="ingrese su texto aqui"></textarea>
+
+                <div class="aviso">
+                    <p>&#9888;Solo letras minúsculas y sin acentos</p>    
+                </div>
+                <div class="contenedorbotones">  
+                          
+                    <button onclick="encriptar();" class="boton" id="encriptar"><p>Encriptar</p></button>
+                    <button onclick="desencriptar();" class="boton" id="desencriptar"><p>Desencriptar</p></button>
+                </div>
+           
+        </div>
+        <div class="contenedorpadre">    
+            <div class="contenedorsalida">
+                
+              
+                    <textarea name="salida" id="salida" cols="10" rows="1" placeholder= "Ningún mensaje fue encontrado" disabled></textarea>
+                <div class="novisible">
+                    <h1> </h1>
+                </div>
+                    <div class="contenedorbotones" id="botoncopiar">
+                        <button class="boton" id="copiar" disabled>Copiar</button>
+                    </div>
+                
+                
+                
+        </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul> 
+                
+                <li class="contacto">Creado por: Juan Camilo Giraldo</li>
+                <li id="linkedin"><a href="https://www.linkedin.com/in/juancamilogiraldoalzate/"><img src="linkedin (1).png" alt="linkedin" width="50px" height="50px"></a></li>
+
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

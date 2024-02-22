@@ -1,0 +1,514 @@
+@media (prefers-color-scheme: dark) {
+    /* Estilos para el modo oscuro */
+    html{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+    }
+    header{
+        
+        height: 90%;
+        padding: 0;
+        background-color: rgb(0,0,0);
+    }
+
+    #imagen{
+        margin-left: 5%;
+     }
+    .contenedorp{
+        display: inline-block;
+        width: 50%;
+        margin-left: auto;
+    }
+    .logotipo{
+        height: 5%;
+        display: inline-block;
+    }
+    .logotipo img{
+        size: 50px 50px;
+        
+        
+    }
+    .logo{
+        display: inline-block;
+        color: rgb(223, 228, 226) ;
+        text-align: center;
+        font-size: 2em;
+        padding: 0.5em;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    main{
+        background: linear-gradient(rgb(0,0,0), rgba(139, 0, 139));
+        width: 100%;
+        margin: 0 0 auto;
+    }
+    .contenedorentrada{
+     
+        margin-left: 5%;
+        display: inline-block;
+        width: 50%;
+    }
+    #entrada{
+        background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(3, 0, 27, 0.171));
+        width: 100%;
+        height: 400px;
+    }
+    textarea{
+        border: 0 solid;
+        font-family: "Share Tech Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        resize: none;
+        color:silver;
+        font-size: 1.5em;
+       
+    }
+    textarea:focus{
+        outline: none;
+        
+    }
+    .contenedorpadre{
+        margin-top: -40px;
+        margin-left: 10%;
+        display: inline-block;
+        width: 32%;
+        height: 550px;
+        vertical-align: top;
+        background: linear-gradient(black, rgb(3, 0, 27));
+        border-radius: 100px;
+        
+    }
+    .contenedorsalida{
+        width: 98%;
+        margin: 5px;
+    }
+    #salida{
+        border-radius: 10px;
+        background: linear-gradient(black, rgb(3, 0, 27));}
+    
+    #salida:placeholder-shown{
+        text-align: center;
+        position: relative;
+        width: 98%;
+        height: 450px;   
+        background-size: 100% 90%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(4.png);
+        font-size: 2em;
+    }
+    
+    
+    .aviso{
+        padding: 0;
+        margin: 0 0 auto;
+        margin-bottom: -16px;
+        color: silver;    
+    }
+    #salida:not(:placeholder-shown){
+        font-family: "Share Tech Mono", monospace;
+        width: 98%;
+        margin: 0;
+        height: 434px;  
+        overflow: hidden; 
+        animation: escribir 3s steps(40, end); 
+        background: linear-gradient(black, rgba(3, 0, 27, 0));
+         
+    }
+    
+    .contenedorbotones{
+        display: inline-block;
+        width: 100%;
+    }
+    button{
+        display: inline-block;
+        font-size: 1.2em;
+        margin: 0 0 5px 10px;
+        width: 45%;
+        padding: 5px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button:disabled{
+        display: none;
+    }
+    #encriptar{
+        font-family: "Share Tech Mono", monospace;
+        background-color: rgb(19, 18, 18);
+        color: rgb(139, 0, 139);
+        border-radius: 10px;
+        transition: all 1s;
+        margin-left: 3%;
+    }
+    #encriptar:hover{
+        scale: 1.1;
+    }
+    #desencriptar{
+        margin-left: 4%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 1s;
+    }
+    #desencriptar:hover{
+        scale: 1.1;
+    }
+    .novisible{
+        margin-top: 40px;
+    }
+    #botoncopiar{
+        margin-top: -16px;
+        margin-left: 20px;
+        width: 60%;
+    
+    }
+    #copiar{
+        margin-left: 20%;
+        width: 100%;
+        color: white;
+        height: 3.5em;
+        border-radius: 20px;
+        background-color: rgba(126, 118, 118, 0);
+        transition: all 1s;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+    }
+    #copiar:hover{
+        scale: 1.1;
+    }
+    footer{
+        margin-top: -16px;
+        background-color: rgba(139, 0, 139);
+        text-decoration: none;
+        
+    }
+    nav{
+        margin: 5px 0 5px;
+        width: 90%;
+    }
+    ul{
+        display: inline-block;
+        
+        
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+    }
+    #linkedin{
+        margin-left: 20px;
+    }
+    
+    @keyframes escribir {
+        from {
+            width: 0; 
+        }
+        to {
+            width: 100%; 
+        }
+    }
+    @media screen and (max-width:1024px){
+       header{
+        text-align: justify;
+       }
+        main{
+            width: 100%;
+        }
+    
+        .contenedorentrada{
+            
+            border-radius: 0;
+            width: 90%;
+            margin-left: 5%;
+        }
+        .contenedorpadre {
+            width: 90%;
+            border-radius: 0;
+            margin-left: 5%;
+            margin-top: 20px;
+            height: 400px;
+        }
+        #salida:placeholder-shown{
+            height: 350px;
+        }
+        #salida:not(:placeholder-shown){
+            height: 250px;
+        }
+        .novisible{
+            height: 0;
+            margin: -16;
+        }
+        #copiar{
+            width: 50%;
+            margin-left: 50%;
+        }
+        footer{
+            margin-left: -40px;
+        }
+    }
+    
+}
+
+@media (prefers-color-scheme: light) {
+    html{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+    }
+ 
+    header{
+        
+        height: 90%;
+        padding: 0;
+        background-color:rgba(0, 0, 0, 0.062);
+    }
+    .contenedorp{
+        display: inline-block;
+        width: 50%;
+        margin-left: auto;
+    }
+    .logotipo{
+        height: 5%;
+        display: inline-block;
+    }
+    .logotipo img{
+        size: 50px 50px;
+        margin-left: 5%;
+        
+    }
+    .logo{
+        display: inline-block;
+        color: rgb(0, 0, 0) ;
+        text-align: center;
+        font-size: 2em;
+        padding: 0.5em;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+    main{
+        background: linear-gradient(rgba(0, 0, 0, 0.062), rgba(3, 0, 27, 0.171));
+        width: 100%;
+        margin: 0 0 auto;
+    }
+    .contenedorentrada{
+     
+        margin-left: 5%;
+        display: inline-block;
+        width: 50%;
+    }
+    #entrada{
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(3, 0, 27, 0));
+        width: 100%;
+        height: 400px;
+    }
+    textarea{
+        border: 0 solid;
+        font-family: "Share Tech Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        resize: none;
+        color:darkblue;
+        font-size: 1.5em;
+       
+    }
+    textarea:focus{
+        outline: none;
+        
+    }
+    .contenedorpadre{
+        margin-top: -70px;
+        margin-left: 10%;
+        display: inline-block;
+        width: 32%;
+        height: 600px;
+        vertical-align: top;
+        background: white;
+        
+        
+    }
+    .contenedorsalida{
+        width: 98%;
+        margin: 5px;
+    }
+    #salida{
+    
+        background: white}
+    
+    #salida:placeholder-shown{
+        background-color: white;
+        text-align: center;
+        position: relative;
+        width: 98%;
+        height: 450px;   
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url(Sintítulo.png);
+        font-size: 2em;
+    }
+    
+    
+    .aviso{
+        padding: 0;
+        margin: 0 0 auto;
+        margin-bottom: -16px;
+        color: rgb(100, 97, 97);    
+    }
+    #salida:not(:placeholder-shown){
+        font-family: "Share Tech Mono", monospace;
+        width: 98%;
+        margin: 0;
+        height: 470px;  
+        overflow: hidden; 
+        animation: escribir 3s steps(40, end); 
+         
+    }
+    
+    .contenedorbotones{
+        display: inline-block;
+        width: 100%;
+    }
+    button{
+        display: inline-block;
+        font-size: 1.2em;
+        margin: 0 0 5px 10px;
+        width: 45%;
+        padding: 5px;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button:disabled{
+        display: none;
+    }
+    #encriptar{
+        font-family: "Share Tech Mono", monospace;
+        background-color: darkblue;
+        color: white;
+        border-radius: 10px;
+        transition: all 1s;
+        margin-left: 3%;
+        border: 0 solid;
+        margin-bottom: 20px;
+    }
+    #encriptar:hover{
+        scale: 1.1;
+    }
+    #desencriptar{
+        margin-left: 4%;
+        border-radius: 10px;
+        background-color: #D8DFE8;
+        border: 1px solid darkblue;
+        transition: all 1s;
+    }
+    #desencriptar:hover{
+        scale: 1.1;
+    }
+    .novisible{
+        margin-top: 40px;
+    }
+    #botoncopiar{
+        margin-top: -16px;
+        margin-left: 20px;
+        width: 60%;
+    
+    }
+    #copiar{
+        margin-left: 20%;
+        width: 100%;
+        color: darkblue;
+        height: 3.5em;
+        border-radius: 20px;
+        background-color: rgba(126, 118, 118, 0);
+        transition: all 1s;
+        border-width: 2px;
+        border-style: solid;
+        border-color: darkblue;
+    }
+    #copiar:hover{
+        scale: 1.1;
+    }
+    footer{
+        
+        background-color:  rgba(3, 0, 27, 0.171);
+        text-decoration: none;
+        
+    }
+    nav{
+        margin: 5px 0 5px;
+        width: 90%;
+    }
+    ul{
+        display: inline-block;
+        
+        
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+    }
+    #linkedin{
+        margin-left: 20px;
+    }
+    
+    @keyframes escribir {
+        from {
+            width: 0; 
+        }
+        to {
+            width: 100%; 
+        }
+    }
+    @media screen and (max-width:1024px){
+       header{
+        text-align: justify;
+       }
+        main{
+            width: 100%;
+        }
+    
+        .contenedorentrada{
+            
+            border-radius: 0;
+            width: 90%;
+            margin-left: 5%;
+        }
+        .contenedorpadre {
+            width: 90%;
+            border-radius: 0;
+            margin-left: 5%;
+            margin-top: 20px;
+            height: 400px;
+        }
+        #salida:placeholder-shown{
+            height: 350px;
+        }
+        #salida:not(:placeholder-shown){
+            height: 250px;
+        }
+        .novisible{
+            height: 0;
+            margin: -16;
+        }
+        #copiar{
+            width: 50%;
+            margin-left: 50%;
+        }
+        footer{
+            margin-left: -40px;
+        }
+    }
+    
+    }
+
+
